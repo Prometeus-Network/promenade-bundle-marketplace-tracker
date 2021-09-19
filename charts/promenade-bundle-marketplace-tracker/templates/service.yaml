@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "promenade-bundle-marketplace-tracker.fullname" . }}
+  labels:
+    {{- include "promenade-bundle-marketplace-tracker.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "promenade-bundle-marketplace-tracker.selectorLabels" . | nindent 4 }}
