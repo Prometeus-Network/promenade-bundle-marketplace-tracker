@@ -1,5 +1,5 @@
 const BundleMarketplaceContractInfo = {
-  address: '0xE1b772BdfB5c864336aCf3a50bc48A48A8253eA1',
+  address: process.env.BUNDLE_MARKETPLACE_ADDRESS,
   abi: [
     {
       anonymous: false,
