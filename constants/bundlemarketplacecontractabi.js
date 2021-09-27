@@ -1,5 +1,5 @@
 const BundleMarketplaceContractInfo = {
-  address: '0x03b0Dd901E3366f6666c2eb411D14c469b8E8727',
+  address: '0xE1b772BdfB5c864336aCf3a50bc48A48A8253eA1',
   abi: [
     {
       anonymous: false,
