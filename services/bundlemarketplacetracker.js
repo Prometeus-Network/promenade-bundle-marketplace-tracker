@@ -10,8 +10,7 @@ const provider = new ethers.providers.JsonRpcProvider(
 )
 
 const loadBundleMarketplaceContract = () => {
-  let abi = BundleMarketplaceContractInfo.abi
-  let address = process.env.CONTRACTADDRESS
+  let {abi, address} = BundleMarketplaceContractInfo
   let contract = new ethers.Contract(address, abi, provider)
   return contract
 }
